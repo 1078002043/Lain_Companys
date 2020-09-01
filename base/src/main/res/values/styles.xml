@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="popupAnim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/anim_show</item>
+        <item name="android:windowExitAnimation">@anim/anim_dismiss</item>
+    </style>
+
+</resources>

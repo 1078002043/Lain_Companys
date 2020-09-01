@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--抽屉-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="250dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/drawer_head_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            app:srcCompat="@drawable/default_head" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/font_white"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:id="@+id/user_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/font_white"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/font_white"
+                android:layout_marginTop="10dp"
+                android:textIsSelectable="true"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_info_role"
+        android:layout_marginTop="10dp"
+        >
+
+    </com.nex3z.flowlayout.FlowLayout>
+
+
+
+</LinearLayout>

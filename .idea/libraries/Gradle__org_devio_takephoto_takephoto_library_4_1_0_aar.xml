@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: org.devio.takephoto:takephoto_library:4.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2380e87f85b3e02625a4e145fe68462/jetified-takephoto_library-4.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2380e87f85b3e02625a4e145fe68462/jetified-takephoto_library-4.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e2380e87f85b3e02625a4e145fe68462/jetified-takephoto_library-4.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.devio.takephoto/takephoto_library/4.1.0/860803331d4d16f0de5bc6b398b14585901331a9/takephoto_library-4.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.devio.takephoto/takephoto_library/4.1.0/f1bbdb0a0fafdbc2ff1a1698ecd9bbf6c350292/takephoto_library-4.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

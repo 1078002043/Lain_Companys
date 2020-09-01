@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./hk_lib/libs/jna.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/hk_lib/libs/jna.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

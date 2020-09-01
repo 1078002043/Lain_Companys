@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/video_back_alert">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始时间"
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/start_time_ed"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/video_time_bg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        >
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/alert_time"
+            android:layout_marginStart="8dp"
+            />
+
+        <TextView
+            android:id="@+id/start_sub_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2019-10-16 "
+            android:textColor="#ff999999"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/start_sub_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="19:02:44"
+            android:textColor="#ff999999"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束时间"
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="24dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/end_time_ed"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/video_time_bg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        >
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/alert_time"
+            android:layout_marginStart="8dp"
+            />
+
+        <TextView
+            android:id="@+id/end_sub_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2019-10-16 "
+            android:textColor="#ff999999"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/end_sub_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="19:02:44"
+            android:textColor="#ff999999"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询条件"
+        android:textColor="#ff333333"
+        android:textSize="14sp"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="24dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户查询"
+            android:layout_marginEnd="15dp"
+            />
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/user_list_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            app:arrowTint="@color/colorPrimary"
+            app:textTint="@color/black"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="操作查询"
+            android:layout_marginEnd="15dp"
+            />
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/option_list_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            app:arrowTint="@color/colorPrimary"
+            app:textTint="@color/black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:paddingBottom="20dp"
+        >
+
+        <Button
+            android:id="@+id/concern_tv"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="15dp"
+            android:text="确定"
+            android:textColor="@color/font_white"
+            android:background="@drawable/split_bg"
+            />
+
+        <Button
+            android:id="@+id/back_play_cancel"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/video_back_cancel"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

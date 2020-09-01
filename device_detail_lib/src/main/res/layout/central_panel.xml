@@ -1,0 +1,506 @@
+<!--中央空调的设置面板-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radius_left_top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:gravity="center"
+                android:text="制冷温度"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="47dp"
+                android:background="@drawable/btn_circle_bg"
+                android:gravity="center"
+                android:text="23.0"
+                android:textColor="#ff5097ff"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:gravity="center"
+                android:text="制热温度"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <EditText
+                android:inputType="numberDecimal"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="47dp"
+                android:background="@drawable/btn_circle_bg"
+                android:gravity="center"
+                android:text="23.0"
+                android:textColor="#ff5097ff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:gravity="center"
+                android:text="工作模式"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/heating_set"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="47dp"
+                android:background="@drawable/circle_bg"
+                android:gravity="center"
+                android:text="制热"
+                android:textColor="#ff5097ff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/refrigeration_set"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/select_bg"
+                android:gravity="center"
+                android:text="制冷"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="24dp"
+                android:gravity="center"
+                android:text="定时开关"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/timing_start"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="47dp"
+                android:background="@drawable/circle_bg"
+                android:gravity="center"
+                android:text="启用"
+                android:textColor="#ff5097ff"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/timing_stop"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/select_bg"
+                android:gravity="center"
+                android:text="关闭"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="设置时间"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="开机时间"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="09:10"
+                    android:textColor="#ff5097ff"
+                    android:textSize="12sp"
+                    android:inputType="time"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="关机时间"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="20:30"
+                    android:textColor="#ff5097ff"
+                    android:inputType="time"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="设置时间"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="开机时间"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circle_bg"
+                    android:inputType="time"
+                    android:gravity="center"
+                    android:text="09:10"
+                    android:textColor="#ff5097ff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="关机时间"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:inputType="time"
+                    android:text="20:30"
+                    android:textColor="#ff5097ff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="设置时间"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="开机时间"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="09:10"
+                    android:inputType="time"
+                    android:textColor="#ff5097ff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="关机时间"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:inputType="time"
+                    android:text="20:30"
+                    android:textColor="#ff5097ff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingTop="23dp"
+            android:paddingBottom="14dp"
+            >
+
+            <Button
+                android:id="@+id/true_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/right_bg"
+                android:text="确定"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/cancel_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/left_bg"
+                android:text="取消"
+                android:textColor="#ff333333"
+                android:textSize="15sp"
+                android:layout_marginEnd="13dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

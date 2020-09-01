@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  以下是未输入信息时的提示  -->
+    <string name="a_name">设备名称</string>
+    <string name="a_interval">更新时间</string>
+    <string name="a_rangeMin">最小值</string>
+    <string name="a_rangeMax">最大值</string>
+    <!--  以下是输入的数据有误或者提交时数据不正确的提示信息  -->
+    <string name="err_deviceName">请输入设备名称</string>
+    <string name="err_deviceInterval">请输入更新时间</string>
+    <string name="err_alertValue">请输入报警值</string>
+    <string name="err_line">请输入线长度</string>
+    <string name="err_max">请输入最大值</string>
+    <string name="err_min">请输入最小值</string>
+    <string name="err_minForMax">最小值不能大于最大值</string>
+    <string name="err_maxForMin">最大值不能小于最小值</string>
+
+
+
+
+
+
+
+
+
+
+
+    <string name="app_name">AwesomeValidationDemo</string>
+    <string name="edt_userid">User ID</string>
+
+    <string name="edt_password">Password</string>
+    <string name="edt_password_confirmation">Re-enter password</string>
+    <string name="edt_email">Email Address</string>
+    <string name="edt_ip">IP Address</string>
+    <string name="edt_tel">Telephone number</string>
+    <string name="edt_zipcode">Zip Code</string>
+    <string name="edt_firstname">First Name</string>
+    <string name="edt_lastname">Last Name</string>
+    <string name="edt_year">Year</string>
+    <string name="edt_height">Height (m)</string>
+    <string name="edt_birthday">Date of birth e.g 18/12/1983</string>
+    <string name="btn_done">提交</string>
+    <string name="btn_clr">取消</string>
+    <string name="err_userid">Letters, numbers, underscores or hyphens</string>
+
+    <string name="err_password">The password should contain at least 8 characters, including at least one lower case letter, one upper case letter, one number and one punctuation mark</string>
+    <string name="err_password_confirmation">Please re-enter the password</string>
+    <string name="err_name">Human name please</string>
+    <string name="err_email">Email address please</string>
+    <string name="err_ip">IP address please</string>
+    <string name="err_tel">Telephone Number please</string>
+    <string name="err_zipcode">Number only</string>
+    <string name="err_year">Year must be between 1900 and this year</string>
+    <string name="err_height">Human height should be between 0 to 2.72 meters</string>
+    <string name="err_birth">Birthday should be like Day/Month/Year, and must be >= 18</string>
+    <string name="err_tech_stacks">Must choose one tech stack</string>
+    <string name="img_success">Success</string>
+    <string-array name="styles">
+        <item>BASIC</item>
+        <item>COLORATION</item>
+        <item>UNDERLABEL</item>
+        <item>TEXT_INPUT_LAYOUT</item>
+    </string-array>
+    <string-array name="tech_stacks">
+        <item>&lt; Please select one &gt;</item>
+        <item>Backend</item>
+        <item>Frontend</item>
+        <item>Mobile</item>
+        <item>Data</item>
+        <item>Fullstack</item>
+    </string-array>
+
+    <string-array name="functionCodeArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="deviceAddress">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string name="about_me_1">\u3000\u3000广州唯莱信息科技有限公司，成立于2002年,是专业生产模块化数据中心机房、集装箱机房、一体化机柜、室外一体化机柜等智能化产品开发、安装施工、售后服务的大型综合性企业。经过多年的经验积累，我司取得众多高新技术相关资质和产品专利。在业内受到国内外众多企业和用户的认可。KITOZER是广州唯莱信息科技有限公司旗下网站，公司成立于2002年</string>
+    <string name="about_me_2">\u3000\u3000公司成立至今，坚持以专业的技术、优良的商品、完善的售后服务、微利提取的原则服务于社会。 我公司为您提供的产品，关键设备采用高质量进口合格产品，一般设备及材料采用国内大型企业或合资企业的产品，各种产品企业都通过 ISO9001国际质量体系认证。有一支精良的安防建设队伍，由专业技术人员为您设计，现场有专业技术人员带领施工，有良好职业道德施工人员。我公司用户拥有优质的设计施工质量和优质的售后服务保障</string>
+    <string name="about_me_3">\u3000\u3000专注 ——维护中小企业管理品牌、跟踪业界出色信息技术、传播经营管理理念是唯莱永恒不变的追求，唯莱坚持“全新的理念出色的技术、丰富的经验、优质的服务”，专注于核心竞争力的建设是唯莱取得今天成功的根本，也必将是唯莱再创辉煌的基础！</string>
+    <string name="about_me_4">\u3000\u3000分布于神州大地各行业中的800万中小企业是中国更具活力的经济力量，虽然没有强势的市场影响力和雄厚的资金储备，但无疑，个性张扬的他们更具上升的潜力，后WTO时代市场开放融合，残烈的竞争使他们的发展更加充满变数。基于以上认识，在智能化设备管理市场概念喧嚣的热潮中，独辟“实用主义”产品哲学，唯莱将客户视为合作关系，我们提供更为实用的产品和服务，赢得良好的口碑。承蒙广大用户的厚爱，我公司得以健康发展。在跨入新的世纪后，公司将加快发展速度，充分发挥已有资源，更多地开展行业用户的服务工作，开创新的发展局面。我公司全体员工愿与社会各界携手共创未来!我们秉承真诚合作精神向广大客户提供相关的系统解决方案，设备销售及技术支持，价格合理，欢迎来人来电咨询、洽谈业务！</string>
+    <string name="about_me_5">\u3000\u3000分享 ——“道不同，不相谋”，唯莱在公司团队之间以及与股东、渠道伙伴、客户之间均倡导平等、共赢、和谐、协同的合作文化，在迎接外部挑战的过程中，我们共同期待发展和超越，共同分享激情与快乐！“合作的智慧”是决定唯莱青春永葆的动力！</string>
+    <string name="about_me_6">广州唯莱信息科技有限公司\n广州总公司： 广州市天河区建中路11号103室</string>
+    <string name="about_me_7">\u3000\u3000020-85574618\n\u3000\u300085574628\n\u3000\u300085574638\n\u3000\u300085698805\n\u3000\u300085698850\n\u3000\u300085698857\n\u3000\u300085698966</string>
+
+    <string name="about_me_8">\u3000\u3000北京、天津、河北：周先生 13922289957\n\u3000\u3000湖南、湖北、江西：周先生 18664649156\n\u3000\u3000海南：周先生 18976116408\n\u3000\u3000贵州、云南、广西：周先生 18664649156\n\u3000\u3000上海、江苏、浙江、安徽：傅先生 15915870082\n\u3000\u3000重庆、成都、西安：谭小姐 13710907506\n\u3000\u3000西安、兰州、宁夏：陈先生 18873549000\n\u3000\u3000西藏、新疆：陈先生 18873549000</string>
+
+    <string name="link_me_1"></string>
+    <string name="link_me_2"></string>
+    <string name="link_me_3"></string>
+    <string name="link_me_4"></string>
+    <string name="link_me_5"></string>
+    <string name="link_me_6"></string>
+    <string name="link_me_7"></string>
+    <string name="link_me_8"></string>
+
+
+    <string name="about_title_1">质量方针：以人为本</string>
+    <string name="about_title_2">客户哲学：全新理念、出色的技术、丰富的经验，开创数字新生活</string>
+    <string name="about_title_3">客户服务：以高科技手段、专业化的服务为客户创造价值</string>
+    <string name="about_title_4">客服服务</string>
+    <string name="about_title_5">联系电话</string>
+    <string name="about_title_6">办事处</string>
+
+</resources>

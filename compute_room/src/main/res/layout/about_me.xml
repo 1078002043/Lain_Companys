@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/insert_toolbar"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_me_1"
+                android:textSize="15sp"
+                android:lineSpacingExtra="10dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/about_1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_title_1"
+                android:textColor="#ff333333"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:text="@string/about_me_2"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_title_2"
+                android:textColor="#ff333333"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_me_3"
+                android:textSize="15sp"
+                android:lineSpacingExtra="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_me_5"
+                android:textSize="15sp"
+                android:lineSpacingExtra="10dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/about_2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_title_3"
+                android:textColor="#ff333333"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_me_4"
+                android:textSize="15sp"
+                android:lineSpacingExtra="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_title_4"
+                android:textColor="#ff333333"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_me_6"
+                android:textSize="15sp"
+                android:lineSpacingExtra="10dp"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_title_5"
+                android:textColor="#ff333333"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_me_7"
+                android:textSize="15sp"
+                android:lineSpacingExtra="10dp"
+                android:textIsSelectable="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_title_6"
+                android:textColor="#ff333333"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_me_8"
+                android:textSize="15sp"
+                android:lineSpacingExtra="10dp"
+                android:textIsSelectable="true"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--Toolbar-->
+    <include
+        android:id="@+id/insert_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

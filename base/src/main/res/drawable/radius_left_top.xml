@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--左上角圆角-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--<corners                                    //定义圆角-->
+    <!--android:radius="dimension"                  //全部的圆角半径-->
+    <!--android:topLeftRadius="dimension"           //左上角的圆角半径-->
+    <!--android:topRightRadius="dimension"          //右上角的圆角半径-->
+    <!--android:bottomLeftRadius="dimension"        //左下角的圆角半径-->
+    <!--android:bottomRightRadius="dimension" />    //右下角的圆角半径-->
+
+    <!--搞个颜色，不然光设置圆角看不出来-->
+    <solid android:color="#FFFFFF"/>
+    <!--全部的圆角半径都是20dp-->
+    <corners android:topLeftRadius="20dp"/>
+</shape>

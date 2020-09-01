@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?><!--Fragment 主页-->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+
+        android:focusableInTouchMode="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_margin="10dp"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ba"
+                />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="设备名称"
+                android:textColor="#ff000000"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/main_item_bg"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/month_total"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/main_panel_bg"
+                            android:gravity="center"
+                            android:text="156"
+                            android:textColor="#ff666666"
+                            android:textSize="16sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="当月报警"
+                            android:textColor="#ff666666"
+                            android:textSize="15sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/current_alarm_count"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/main_panel_bg"
+                            android:gravity="center"
+                            android:text="14"
+                            android:textColor="#ffff1d1d"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="当天报警"
+                            android:textColor="#ffff1d1d"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/week_alarm"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/main_panel_bg"
+                            android:gravity="center"
+                            android:text="10"
+                            android:textColor="#ffff1d1d"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="当周报警"
+                            android:textColor="#ffff1d1d"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#FFFFFF"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/main_read"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/main_panel_bg"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textColor="#ff666666"
+                            android:textSize="16sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="已读"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/communication"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/main_panel_bg"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="#ffffa549"
+                            android:textSize="16sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="通讯地址"
+                            android:textColor="#ffffa549"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/unread"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/main_panel_bg"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="#ff666666"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="未读"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="温度能耗"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/energy_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/temp" />
+
+                    <TextView
+                        android:id="@+id/average"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24℃"
+                        android:textColor="#ff333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="平均温度"
+                        android:textColor="#ff666666"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/energy_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/power_icon" />
+
+                    <TextView
+                        android:id="@+id/total_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9200kw·h"
+                        android:textColor="#ff333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="功率总和"
+                        android:textColor="#ff666666"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="报警信息"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/main_alert_item"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+                android:id="@+id/main_alert_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                app:recyclerviewEmptyView="@layout/empty_view"
+                android:visibility="gone"
+                >
+
+            </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

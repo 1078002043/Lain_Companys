@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <include layout="@layout/content_main" />-->
+
+
+
+    <ImageView
+        android:id="@+id/frame_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <com.example.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+        android:id="@+id/hicvp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:icvp_scroll_duration="250"
+        app:icvp_center_page_scale_offset="30dp"
+        app:icvp_min_page_scale_offset="5dp"
+        app:icvp_max_page_scale="0.8"
+        app:icvp_min_page_scale="0.55"
+        app:icvp_medium_scaled="false"
+        android:layout_centerInParent="true"
+
+        />
+<!--必须放到最后，才能点击这个控件-->
+    <searchablespinner.SearchableSpinner
+        android:id="@+id/searchable_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center_horizontal"
+        app:StartSearchTintColor="@android:color/white"
+        app:DoneSearchTintColor="@android:color/holo_purple"
+        app:RevealViewBackgroundColor="@android:color/holo_purple"
+        app:SearchViewBackgroundColor="@android:color/secondary_text_dark"
+        app:ShowBorders="false"
+        app:BordersSize="4dp"
+        app:RevealEmptyText="Touch to select"
+        app:SpinnerExpandHeight="300dp"
+        app:ItemsDivider="@color/gray_400"
+        app:DividerHeight="0.5dp"/>
+
+</RelativeLayout>

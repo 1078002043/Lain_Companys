@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/alert_edit_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="周期"
+        android:textSize="14sp"
+        android:enabled="false"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/alert_time1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="时间段一"
+        android:textSize="14sp"
+        
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/alert_time2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="时间段二"
+        android:textSize="14sp"
+        
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/alert_time3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="时间段三"
+        android:textSize="14sp"
+        
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/alert_time_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="时间间隔"
+        android:textSize="14sp"
+        
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/alert_btn_clr"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/blue_btn"
+            android:text="@string/btn_clr"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+
+        <Button
+            android:id="@+id/alert_btn_done"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/blue_btn"
+            android:text="@string/btn_done"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

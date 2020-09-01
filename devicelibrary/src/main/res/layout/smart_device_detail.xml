@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--点击主页的系统后，会跳转到该系统中的设备列表-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".view.ComputerRoom">
+    <!--Computer Room 设备列表-->
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/computer_room_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_centerHorizontal="true"
+        app:recyclerviewEmptyView="@layout/empty_view"
+        >
+
+    </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+</RelativeLayout>

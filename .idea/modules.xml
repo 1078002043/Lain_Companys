@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FloatMenu/FloatMenu.iml" filepath="$PROJECT_DIR$/FloatMenu/FloatMenu.iml" group="Lain_Companys/FloatMenu" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Lain_Companys.iml" filepath="$PROJECT_DIR$/.idea/Lain_Companys.iml" group="Lain_Companys" />
+      <module fileurl="file://$PROJECT_DIR$/MPChartLib/MPChartLib.iml" filepath="$PROJECT_DIR$/MPChartLib/MPChartLib.iml" group="Lain_Companys/MPChartLib" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Lain_Companys/app" />
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" group="Lain_Companys/base" />
+      <module fileurl="file://$PROJECT_DIR$/circleprogresslibrary/circleprogresslibrary.iml" filepath="$PROJECT_DIR$/circleprogresslibrary/circleprogresslibrary.iml" group="Lain_Companys/circleprogresslibrary" />
+      <module fileurl="file://$PROJECT_DIR$/circular_progress/circular_progress.iml" filepath="$PROJECT_DIR$/circular_progress/circular_progress.iml" group="Lain_Companys/circular_progress" />
+      <module fileurl="file://$PROJECT_DIR$/compute_room/compute_room.iml" filepath="$PROJECT_DIR$/compute_room/compute_room.iml" group="Lain_Companys/compute_room" />
+      <module fileurl="file://$PROJECT_DIR$/device_detail_lib/device_detail_lib.iml" filepath="$PROJECT_DIR$/device_detail_lib/device_detail_lib.iml" group="Lain_Companys/device_detail_lib" />
+      <module fileurl="file://$PROJECT_DIR$/devicelibrary/devicelibrary.iml" filepath="$PROJECT_DIR$/devicelibrary/devicelibrary.iml" group="Lain_Companys/devicelibrary" />
+      <module fileurl="file://$PROJECT_DIR$/edit_device/edit_device.iml" filepath="$PROJECT_DIR$/edit_device/edit_device.iml" group="Lain_Companys/edit_device" />
+      <module fileurl="file://$PROJECT_DIR$/ffmeger_com/ffmeger_com.iml" filepath="$PROJECT_DIR$/ffmeger_com/ffmeger_com.iml" group="Lain_Companys/ffmeger_com" />
+      <module fileurl="file://$PROJECT_DIR$/hk_lib/hk_lib.iml" filepath="$PROJECT_DIR$/hk_lib/hk_lib.iml" group="Lain_Companys/hk_lib" />
+      <module fileurl="file://$PROJECT_DIR$/infinitecycleviewpager/infinitecycleviewpager.iml" filepath="$PROJECT_DIR$/infinitecycleviewpager/infinitecycleviewpager.iml" group="Lain_Companys/infinitecycleviewpager" />
+      <module fileurl="file://$PROJECT_DIR$/multipleimageselect/multipleimageselect.iml" filepath="$PROJECT_DIR$/multipleimageselect/multipleimageselect.iml" group="Lain_Companys/multipleimageselect" />
+      <module fileurl="file://$PROJECT_DIR$/mymodule/mymodule.iml" filepath="$PROJECT_DIR$/mymodule/mymodule.iml" group="Lain_Companys/mymodule" />
+      <module fileurl="file://$PROJECT_DIR$/mympchart/mympchart.iml" filepath="$PROJECT_DIR$/mympchart/mympchart.iml" group="Lain_Companys/mympchart" />
+      <module fileurl="file://$PROJECT_DIR$/network_tools/network_tools.iml" filepath="$PROJECT_DIR$/network_tools/network_tools.iml" group="Lain_Companys/network_tools" />
+      <module fileurl="file://$PROJECT_DIR$/pool/pool.iml" filepath="$PROJECT_DIR$/pool/pool.iml" group="Lain_Companys/pool" />
+      <module fileurl="file://$PROJECT_DIR$/progress_line/progress_line.iml" filepath="$PROJECT_DIR$/progress_line/progress_line.iml" group="Lain_Companys/progress_line" />
+      <module fileurl="file://$PROJECT_DIR$/searchablespinner/searchablespinner.iml" filepath="$PROJECT_DIR$/searchablespinner/searchablespinner.iml" group="Lain_Companys/searchablespinner" />
+      <module fileurl="file://$PROJECT_DIR$/text_view_lib/text_view_lib.iml" filepath="$PROJECT_DIR$/text_view_lib/text_view_lib.iml" group="Lain_Companys/text_view_lib" />
+    </modules>
+  </component>
+</project>

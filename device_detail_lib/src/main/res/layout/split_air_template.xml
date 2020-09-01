@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--分体空调实时数据-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/split_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="111dp"
+    android:layout_gravity="center_horizontal"
+
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="11.5dp"
+    android:layout_marginBottom="11.5dp"
+    android:orientation="vertical"
+
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:id="@+id/split_image_view"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="30dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/split_air_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff333333"
+                        android:text="1号空调"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="地址：1"
+                        android:textSize="12sp"
+
+                        android:id="@+id/split_air_address"
+                        />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/split_air_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:theme="@style/MySwitchCompat"
+                    android:enabled="false"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,120 @@
+
+{
+	"buildFiles" : [ "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\admin\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AS_Programe\\Lain_Companys(1)\\Lain_Companys\\hk_lib\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"avcodec-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avcodec",
+			"buildType" : "release",
+			"output" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/libs/armeabi-v7a/libavcodec.so",
+			"toolchain" : "933627681"
+		},
+		"avdevice-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avdevice",
+			"buildType" : "release",
+			"output" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/libs/armeabi-v7a/libavdevice.so",
+			"toolchain" : "933627681"
+		},
+		"avfilter-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avfilter",
+			"buildType" : "release",
+			"output" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/libs/armeabi-v7a/libavfilter.so",
+			"toolchain" : "933627681"
+		},
+		"avformat-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avformat",
+			"buildType" : "release",
+			"output" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/libs/armeabi-v7a/libavformat.so",
+			"toolchain" : "933627681"
+		},
+		"avutil-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "avutil",
+			"buildType" : "release",
+			"output" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/libs/armeabi-v7a/libavutil.so",
+			"toolchain" : "933627681"
+		},
+		"native-lib-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "C:\\Users\\admin\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AS_Programe\\Lain_Companys(1)\\Lain_Companys\\hk_lib\\.cxx\\cmake\\release\\armeabi-v7a --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/admin/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/admin/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS -I..\\..\\..\\..\\libs\\include -I..\\..\\..\\..\\libs\\libyuv  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -frtti -fexceptions -Oz -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/admin/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/admin/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS -I..\\..\\..\\..\\libs\\include -I..\\..\\..\\..\\libs\\libyuv  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -frtti -fexceptions -Oz -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/src/main/cpp/FFmpegPlayer.cpp",
+					"workingDirectory" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/admin/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/admin/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS -I..\\..\\..\\..\\libs\\include -I..\\..\\..\\..\\libs\\libyuv  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -frtti -fexceptions -Oz -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/src/main/cpp/IFFmpegPlayer.cpp",
+					"workingDirectory" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/admin/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/admin/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS -I..\\..\\..\\..\\libs\\include -I..\\..\\..\\..\\libs\\libyuv  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -frtti -fexceptions -Oz -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/src/main/cpp/FFmpegMusic.cpp",
+					"workingDirectory" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/.cxx/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/build/intermediates/cmake/release/obj/armeabi-v7a/libnative-lib.so",
+			"toolchain" : "933627681"
+		},
+		"swresample-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "swresample",
+			"buildType" : "release",
+			"output" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/libs/armeabi-v7a/libswresample.so",
+			"toolchain" : "933627681"
+		},
+		"swscale-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "swscale",
+			"buildType" : "release",
+			"output" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/libs/armeabi-v7a/libswscale.so",
+			"toolchain" : "933627681"
+		},
+		"yuv-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "yuv",
+			"buildType" : "release",
+			"output" : "D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/libs/armeabi-v7a/libyuv.so",
+			"toolchain" : "933627681"
+		}
+	},
+	"toolchains" : 
+	{
+		"933627681" : 
+		{
+			"cCompilerExecutable" : "C:/Users/admin/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/admin/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

@@ -1,0 +1,3 @@
+D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/native-lib.dir
+D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/AS_Programe/Lain_Companys(1)/Lain_Companys/hk_lib/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir

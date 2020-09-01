@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><!--主页-->
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/font_white"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edMaxAnimationDuration="1000"
+    app:edMenuBackground="@color/colorPrimary"
+    app:edMenuSize="280dp"
+    android:fitsSystemWindows="true"
+    app:edPosition="1"
+    skin:enable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+
+        <!--动态的Fragment-->
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/main_bottom_nav"
+            android:layout_below="@+id/insert_toolbar"
+            skin:enable="true">
+
+        </FrameLayout>
+
+        <!--底部导航栏-->
+        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:id="@+id/main_bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            app:itemIconTint="@drawable/bottom_navitation_selector"
+            app:itemTextColor="@drawable/bottom_navitation_selector"
+            app:menu="@menu/menu_navigation_center_fab"
+            android:visibility="gone"
+            />
+
+        <!--Toolbar-->
+        <include
+            android:id="@+id/insert_toolbar"
+            layout="@layout/toolbar"
+            android:fitsSystemWindows="true"
+            />
+
+    </RelativeLayout>
+    <!--    抽屉布局-->
+    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+        android:id="@+id/menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        skin:enable="true">
+
+        <!--抽屉中使用 Fragment 来显示-->
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FloatMenu" />
+            <option value="$PROJECT_DIR$/MPChartLib" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/circleprogresslibrary" />
+            <option value="$PROJECT_DIR$/circular_progress" />
+            <option value="$PROJECT_DIR$/compute_room" />
+            <option value="$PROJECT_DIR$/device_detail_lib" />
+            <option value="$PROJECT_DIR$/devicelibrary" />
+            <option value="$PROJECT_DIR$/edit_device" />
+            <option value="$PROJECT_DIR$/ffmeger_com" />
+            <option value="$PROJECT_DIR$/hk_lib" />
+            <option value="$PROJECT_DIR$/infinitecycleviewpager" />
+            <option value="$PROJECT_DIR$/multipleimageselect" />
+            <option value="$PROJECT_DIR$/mymodule" />
+            <option value="$PROJECT_DIR$/mympchart" />
+            <option value="$PROJECT_DIR$/network_tools" />
+            <option value="$PROJECT_DIR$/pool" />
+            <option value="$PROJECT_DIR$/progress_line" />
+            <option value="$PROJECT_DIR$/searchablespinner" />
+            <option value="$PROJECT_DIR$/text_view_lib" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

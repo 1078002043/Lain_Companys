@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备的管理-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--设备管理列表-->
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/new_device_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:recyclerviewEmptyView="@layout/empty_view"
+        >
+
+    </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+    <!--点击添加新的设备-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:src="@drawable/device_add"
+        android:visibility="gone"
+        app:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        app:pressedTranslationZ="0dp"
+        app:rippleColor="@color/colorPrimary"
+
+        />
+
+</RelativeLayout>

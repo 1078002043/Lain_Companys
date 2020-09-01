@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--设备详请中 ViewPager 模板-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--设备详情中的顶部导航栏-->
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/base_device_detail_magic2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_navigator_height"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:visibility="gone">
+
+    </net.lucode.hackware.magicindicator.MagicIndicator>
+
+    <!--ViewPager-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/base_devices_detail_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/detail_bg"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</LinearLayout>

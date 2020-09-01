@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rengwuxian.materialedittext.MaterialEditText
+
+    android:id="@+id/editText_username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint=""
+    android:lines="1"
+    app:met_autoValidate="true"
+    app:met_baseColor="#37383A"
+    app:met_clearButton="true"
+    app:met_errorColor="#6486B1"
+    app:met_floatingLabel="highlight"
+    app:met_floatingLabelText=""
+    app:met_iconPadding="2dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginRight="10dp"
+    app:met_primaryColor="#982360"
+    app:met_singleLineEllipsis="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+</com.rengwuxian.materialedittext.MaterialEditText>

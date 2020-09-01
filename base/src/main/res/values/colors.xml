@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5097FF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="font_white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="skin_color">#ff66cc</color>
+
+    <color name="grey">#999999</color>
+
+    <color name="primary">#009688</color>
+    <color name="primaryDark">#00796b</color>
+    <color name="accent">#eeff41</color>
+    <color name="accentLight">#F4FF81</color>
+    <color name="tab_text_color">#ffff3abb</color>
+
+    <color name="backgroundColor">@color/background_material_dark</color>
+    <color name="backgroundColorPress">@color/accent_material_dark</color>
+
+    <color name="font_color">#666666</color>
+    <color name="color_5097FF">#5097FF</color>
+
+    <color name="detail_bg">#FFFFFF</color>
+    <color name="xAils_textColor">#666666</color>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="权限名称"
+                android:textColor="@color/font_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/role_sheet_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btn_circle_bg"
+                android:gravity="center"
+                android:textColor="#ff5097ff"
+                android:hint="请填写权限名称"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="权限描述"
+                android:textColor="@color/font_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/role_sheet_desc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btn_circle_bg"
+                android:gravity="center"
+                android:textColor="#ff5097ff"
+                android:hint="请填写权限描述"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="权限路径"
+                android:textColor="@color/font_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/role_sheet_path"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btn_circle_bg"
+                android:gravity="center"
+                android:textColor="#ff5097ff"
+                android:hint="请填写权限路径"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="20dp"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/role_sheet_right"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/right_bg"
+            android:text="确定"
+            android:textColor="@color/font_white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/role_sheet_cancel"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/left_bg"
+            android:text="取消"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

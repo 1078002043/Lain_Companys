@@ -1,0 +1,234 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.android.library'
+//apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'com.jakewharton.butterknife'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "cn.com.lain"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode getIncreasedVersionCode()
+        versionName "1.0.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //添加到此处
+        multiDexEnabled true
+
+        ndk {
+            // 设置支持的SO库架构，才能使用 海康 SDK so 文件
+            abiFilters "armeabi-v7a", "x86"
+        }
+
+        externalNativeBuild {
+            cmake {
+                cppFlags "-frtti -fexceptions"
+                abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
+    //编译之后，jniLibs就出来了
+    sourceSets {
+        main {
+            jni.srcDirs = ['src/main/jni', 'src/main/jni/']
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/jniLibs']
+            jniLibs.srcDirs = ['src/main/libs']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+    //对Layout布局分文件夹管理
+    sourceSets {
+        main {
+            res.srcDirs = [
+
+                    'src/main/res/layout/bottom_sheet',
+                    'src/main/res/layout/template',
+                    'src/main/res/layout/fragment',
+                    'src/main/res/layout/main',
+                    'src/main/res/layout/view_pager',
+                    'src/main/res/layout',
+                    'src/main/res'
+            ]
+        }
+    }
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion = '28.0.3'
+
+}
+//versionCode取时间戳对应的天数（即1970.1.1到当前天数）
+static def getIncreasedVersionCode() {
+    return (int) (System.currentTimeMillis() / (1000 * 60 * 60 * 24))
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //注解
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+    //漂亮的日志打印
+//    implementation 'com.orhanobut:logger:2.2.0'
+
+    //OkHttp3 网络请求库
+    implementation 'com.squareup.okhttp3:okhttp:4.0.1'
+
+    //LitePal 数据库
+    implementation 'org.litepal.android:java:3.0.0'
+
+    //底部导航栏
+    implementation 'com.aurelhubert:ahbottomnavigation:2.3.4'
+
+    //UltimateRecyclerView
+    implementation 'com.marshalchen.ultimaterecyclerview:library:0.9.0'
+
+    //卡片
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    //Alter Dialogs
+    implementation 'com.afollestad.material-dialogs:input:3.1.0'
+    implementation 'com.afollestad.material-dialogs:core:3.1.0'
+
+    //GSON
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //Glide 加载图片
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //轻量级的 Tab
+    implementation 'com.github.LuckSiege:EasyIndicator:v1.1.3'
+
+    //顶部Tab滑动
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    //RecyclerView
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+    //Design
+    implementation 'com.android.support:design:28.0.0'
+
+    //SharePreferences
+    implementation 'com.shawnlin:PreferencesManager:1.0.3'
+
+    //MPAndroidChart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //加载动画
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //表格
+    implementation 'com.github.huangyanbin:SmartTable:2.2.0'
+
+    //时间选择器
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.1'
+
+    //导出excel
+    implementation 'net.sourceforge.jexcelapi:jxl:2.6.12'
+    //加载按钮，登陆的时候会用到
+    implementation project(path: ':circular_progress')
+
+    //主题库
+    implementation 'com.solid.skin:skinlibrary:2.0.0'
+    //颜色选择库
+    implementation 'com.github.QuadFlask:colorpicker:0.0.13'
+    //抽屉布局
+    implementation 'com.mxn.soul:flowingdrawer-core:2.1.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    //一个dex已经装不下了，需要个多个dex
+    implementation 'com.android.support:multidex:1.0.3'
+    //Bottom Tool
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    implementation "com.android.support:design:28.0.0"
+    //请求回调封装
+//    implementation project(path: ':async_task')
+    //搜索
+//    implementation project(path: ':search_library')
+    //动画库
+    implementation 'com.airbnb.android:lottie:3.0.7'
+    //新手引导
+    implementation 'com.github.huburt-Hu:NewbieGuide:v2.4.0'
+
+    //ColorPickerDialog颜色主题
+//    implementation 'com.mummyding.view:colorpickerdialog:1.0.0'
+
+    //轮播图
+    implementation 'com.bigkoo:convenientbanner:2.1.5'
+    //视频
+    //完整版引入
+    implementation 'com.shuyu:GSYVideoPlayer:7.1.0'
+
+    //圆形进度条
+    implementation 'com.king.view:circleprogressview:1.1.0'
+    //EditText
+  	
+    implementation project(path: ':mymodule')
+    implementation project(path: ':edit_device')
+
+    implementation 'com.znq:ZQFLog:1.0.0'
+    //下拉框
+    implementation 'com.github.arcadefire:nice-spinner:1.4.4'
+
+    implementation 'com.tencent.bugly:crashreport:2.8.6'
+    implementation 'com.tencent.bugly:nativecrashreport:3.6.0'
+    //热闹标签
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+
+    //引入冷库的 Moudule
+    implementation project(path: ':pool')
+
+    //基库
+    implementation project(path: ':base')
+
+    implementation project(path: ':devicelibrary')
+
+    implementation project(path: ':device_detail_lib')
+    implementation project(path: ':compute_room')
+
+    implementation project(path: ':hk_lib')
+
+    //选择系统
+//    implementation project(path: ':infinitecycleviewpager')
+
+    implementation 'com.github.hss01248:PageStateManager:2.0.1'
+    compile project(path: ':infinitecycleviewpager')
+    //EditText
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+//    debugImplementation 'com.idescout.sql:sqlscout-server:4.1'
+//    releaseImplementation 'com.idescout.sql:sqlscout-server-noop:4.1'
+    //调试数据库
+//    implementation 'com.idescout.sql:sqlscout-server:4.1'
+
+}

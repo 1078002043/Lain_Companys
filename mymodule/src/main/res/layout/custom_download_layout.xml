@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+
+    <com.king.view.circleprogressview.CircleProgressView
+        android:id="@+id/pb"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        app:cpvLabelText="0 %"
+        app:cpvLabelTextColor="#fff"
+        app:cpvLabelTextSize="20sp"
+        app:cpvProgressColor="#fff"
+        app:cpvStrokeWidth="4dp"
+        app:cpvMax="100"
+        />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/versionchecklib_theme_color"
+            android:text="@string/versionchecklib_downloading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_progress"
+            android:text="@string/versionchecklib_progress"
+            android:textColor="@color/versionchecklib_theme_color"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

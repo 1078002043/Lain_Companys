@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?><!--登陆页面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5197FF"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:src="@drawable/login_ui"
+
+        />
+
+    <ImageView
+        android:id="@+id/login_top_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_top1"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_below="@+id/login_top_img"
+        android:layout_marginStart="30dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/login_text"
+
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/login_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/circle_bg"
+                android:paddingStart="20dp"
+
+                >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/zh" />
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/user_name"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:text="admin"
+
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/circle_bg"
+                android:paddingStart="20dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+
+                    app:srcCompat="@drawable/mm" />
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/user_password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:text="admin"
+
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="27dp"
+                >
+
+                <com.dd.CircularProgressButton
+                    android:id="@+id/user_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_below="@+id/login_panel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+
+                    android:text="@string/login_text"
+                    android:textColor="@color/font_white"
+                    android:textSize="18sp"
+                    app:cpb_cornerRadius="88dp"
+                    app:cpb_textComplete="成功"
+                    app:cpb_textError="失败"
+                    app:cpb_textIdle="@string/login_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="27dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line_set"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/login_setting_panel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/login_set"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--    Toolbar-->
+    <include
+        android:id="@+id/insert_toolbar"
+        layout="@layout/toolbar"
+        android:visibility="invisible" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/server_ip_login_spin"
+        style="@style/SpinKitView.Large.DoubleBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/skin_color"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

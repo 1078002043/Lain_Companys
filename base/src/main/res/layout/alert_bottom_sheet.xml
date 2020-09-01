@@ -1,0 +1,186 @@
+<!--设备报警查询底部面板-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radius_left_top"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="22dp"
+                android:gravity="center_vertical"
+                android:text="查询报警数据"
+                android:textColor="@color/font_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/export_alert_data"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="导出"
+                android:background="@drawable/btn_circle_bg"
+                android:textColor="#ff5097ff"
+                android:layout_marginRight="15dp"
+                />
+
+            <EditText
+                android:id="@+id/panel_year"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/btn_circle_bg"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:visibility="gone"
+                android:text="2019"
+                android:focusable="false"
+                android:textColor="#ff5097ff"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="22dp"
+                android:gravity="center"
+                android:text="时间"
+                android:textColor="@color/font_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/panel_start_time"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/btn_circle_bg"
+                android:focusable="false"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="2019-10-14"
+                android:textColor="#ff5097ff"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:background="#CCCCCC" />
+
+            <EditText
+                android:id="@+id/panel_end_time"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_circle_bg"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:focusable="false"
+                android:text="2019-10-14"
+                android:textColor="#ff5097ff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#F5F5F5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="18dp"
+        android:text="选择设备"
+        android:textColor="@color/font_color"
+        android:textSize="14sp"
+        />
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/temp_alert_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        app:recyclerviewEmptyView="@layout/empty_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:paddingTop="23dp"
+        android:paddingBottom="14dp">
+
+        <Button
+            android:id="@+id/true_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/right_bg"
+            android:text="确定"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/cancel_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/left_bg"
+            android:text="取消"
+            android:textColor="#ff333333"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

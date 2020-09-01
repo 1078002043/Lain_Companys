@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/video_back_alert"
+    >
+    <!--  获取后台IP时显示  -->
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/server_ip_spin"
+        style="@style/SpinKitView.Large.WanderingCubes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/server_ip_panel_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取服务器信息中，请稍等"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        />
+
+    <top.defaults.view.PickerView
+        android:id="@+id/server_ip_pickerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <Button
+        android:id="@+id/select_ip_btn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/split_bg"
+        android:text="确定"
+        android:textColor="@color/font_white"
+        android:layout_below="@+id/server_ip_pickerView"
+        />
+
+</RelativeLayout>

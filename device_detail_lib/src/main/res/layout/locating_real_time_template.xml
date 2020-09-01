@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!--定位漏水 模板-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="93dp"
+    android:layout_marginStart="27dp"
+    android:layout_marginTop="17dp"
+    android:layout_marginEnd="27dp"
+    android:background="@drawable/locating_item_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/locating_img"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+           />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="19dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/locating_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#ff666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/locating_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:textColor="#ff999999"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/locating_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="19dp"
+
+            android:textColor="#ff5097ff"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

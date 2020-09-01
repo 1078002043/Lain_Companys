@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.hss01248:PageStateManager:2.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc0701c35f9f5d9727ea4313c79336ed/jetified-PageStateManager-2.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc0701c35f9f5d9727ea4313c79336ed/jetified-PageStateManager-2.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc0701c35f9f5d9727ea4313c79336ed/jetified-PageStateManager-2.0.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

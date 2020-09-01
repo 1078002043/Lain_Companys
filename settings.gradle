@@ -1,0 +1,3 @@
+include ':circular_progress'
+include ':app', ':circular_progress', ':mymodule', ':pool', ':base', ':devicelibrary', ':device_detail_lib', ':searchablespinner', ':infinitecycleviewpager', ':compute_room', ':text_view_lib', ':MPChartLib', ':mympchart', ':edit_device', ':ffmeger_com', ':network_tools', ':progress_line', ':FloatMenu', ':multipleimageselect', ':circleprogresslibrary'
+include ':hk_lib'

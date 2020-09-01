@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="device_manage_name" type="id"/>
+    <item name="device_address" type="id"/>
+    <item name="device_port" type="id"/>
+    <item name="device_classify" type="id"/>
+    <item name="device_spinner" type="id"/>
+    <item name="spinner8060IP" type="id"/>
+    <item name="spinner8052IP" type="id"/>
+    <item name="spinnerAssetsIP" type="id"/>
+    <item name="spinner8060Channel" type="id"/>
+    <item name="spinner8060Device" type="id"/>
+    <item name="spinner8052Device" type="id"/>
+    <item name="quantityCount" type="id"/>
+
+
+</resources>

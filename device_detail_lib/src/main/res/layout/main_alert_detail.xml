@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--主页中的报警信息，点击报警数据跳转到该页-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainAlertDetail">
+
+    <!--Toolbar-->
+    <include
+        android:id="@+id/insert_toolbar"
+        layout="@layout/toolbar" />
+
+    <util.DragFloatingButton
+        android:id="@+id/query_alert"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/drag_icon"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="40dp"
+        app:fabCustomSize="50dp"
+        android:layout_alignParentRight="true" />
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/month_alert_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:recyclerviewEmptyView="@layout/empty_view"
+        android:layout_below="@id/insert_toolbar"
+        />
+
+</RelativeLayout>

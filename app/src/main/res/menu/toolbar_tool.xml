@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ToolBarTheme">
+
+    <item
+        android:id="@+id/information_read"
+        android:orderInCategory="100"
+        android:icon="@drawable/today_alert_open"
+        android:title="菜单1"
+        android:visible="false"
+        app:showAsAction="never" />
+
+</menu>

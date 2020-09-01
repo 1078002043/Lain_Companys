@@ -1,0 +1,1918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/insert_toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/out_temp_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="出水温度"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/out_temp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/return_temp_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="回水温度"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/return_temp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/environment_temp_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="环境温度"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/environment_temp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/actual_temp_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="实际温度"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/actual_temp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/temp_setting_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="温度设定"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/temp_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/fault_number_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="故障数量"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/fault_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/compressor_quantity_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="压缩机数量"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/compressor_quantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/output_load_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="负荷输出"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/output_load"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#F5F5F5"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="11dp"
+                    android:text="系统状态"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/system_state_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="系统状态"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/system_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/work_pattern_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="工作模式"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/work_pattern"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/communication_failure_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="通讯故障"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/communication_failure"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/external_chain_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="外部连锁"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/external_chain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/air_conditioning_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="空调泵过载"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/air_conditioning"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/temperature_low_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="系统出水温度过低"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/temperature_low"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/temperature_high_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="系统出水温度过高"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/temperature_high"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/air_backwater_probe_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="机组空调总回水探头"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/air_backwater_probe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/air_outlet_probe_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="机组空调总出水探头"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/air_outlet_probe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="12dp"
+                        android:background="#E5E5E5"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/temperature_probe_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="环境温度探头"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/temperature_probe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#F5F5F5"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="11dp"
+                    android:text="压缩机输出"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/compressor_0_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="0# 压缩机"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/compressor_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/compressor_1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="1# 压缩机"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/compressor_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/compressor_2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="2# 压缩机"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/compressor_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/compressor_3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="3# 压缩机"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/compressor_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#F5F5F5"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="11dp"
+                    android:text="翅片温度"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/radiator_fan_0_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#0 单元"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/radiator_fan_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/radiator_fan_1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#1 单元"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/radiator_fan_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/radiator_fan_2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#2 单元"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/radiator_fan_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/radiator_fan_3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#3 单元"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/radiator_fan_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#F5F5F5"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="11dp"
+                    android:text="单元出水温度"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/uni_out_temp_0_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#0 出水温度"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/uni_out_temp_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/uni_out_temp_1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#1 出水温度"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/uni_out_temp_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#F5F5F5"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="11dp"
+                    android:text="单元板压机状态"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/plate_press_0_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#0 板压机"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/plate_press_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/plate_press_1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#1 板压机"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/plate_press_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/plate_press_2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#2 板压机"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/plate_press_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/plate_press_3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#3 板压机"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/plate_press_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#F5F5F5"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="11dp"
+                    android:text="压机运行时间"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/press_0_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#0 单元"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/press_0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/press_1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#1 单元"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/press_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/press_2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#2 单元"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/press_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/press_3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#3 单元"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/press_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#F5F5F5"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="11dp"
+                    android:text="冷凝风机"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/condensate_fan_out1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#0 冷凝风机输出"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/condensate_fan_out1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/condensate_fan_out2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="11dp"
+                            android:gravity="center_vertical"
+                            android:text="#1 冷凝风机输出"
+                            android:textColor="#ff333333"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/condensate_fan_out2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginEnd="28dp"
+                            android:gravity="end"
+                            android:text="正常"
+                            android:textColor="#ff666666"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

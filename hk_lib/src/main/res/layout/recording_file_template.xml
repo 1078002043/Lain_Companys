@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--视频视频的 文件列表 模板-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/file_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/file_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/remove_recording_video"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/remove_recording"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/recordingCover"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="center"
+                />
+
+            <ImageView
+                android:id="@+id/recording_play_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/recording_play_icon"
+                android:layout_gravity="center"
+                />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

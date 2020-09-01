@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.dreamtobe.percentsmoothhandler:library:0.1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/592a0a8c913b37c149a3ad9071aa6d9a/library-0.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/592a0a8c913b37c149a3ad9071aa6d9a/library-0.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/592a0a8c913b37c149a3ad9071aa6d9a/library-0.1.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.dreamtobe.percentsmoothhandler/library/0.1.1/1de6f24e111d43d4e1c4cb71afaa4feabf5c5b98/library-0.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.dreamtobe.percentsmoothhandler/library/0.1.1/94a4141961e33e66c20625e3927c06d05796c82c/library-0.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

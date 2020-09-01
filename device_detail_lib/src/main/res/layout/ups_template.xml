@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--UPS 主页模板-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ups_layout"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="20dp"
+    android:background="@drawable/locating_item_bg"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ups_image"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ups_connect" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ups_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1号UPS"
+            android:textColor="#ff333333"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="点击查看详情"
+                android:textColor="#ff999999"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:checked="true"
+                android:theme="@style/MySwitchTheme"
+                android:enabled="false"
+                android:visibility="gone"
+                >
+
+            </androidx.appcompat.widget.SwitchCompat>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

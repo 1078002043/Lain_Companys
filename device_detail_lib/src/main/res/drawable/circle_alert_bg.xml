@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--自定义的控件圆角背景-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="30px" />
+
+    <solid android:color="#E82C54" />
+<!--    <solid android:color="#ffffff" />-->
+        <stroke android:width="0.33dp" android:color="#83B5FF"/>
+</shape>
+

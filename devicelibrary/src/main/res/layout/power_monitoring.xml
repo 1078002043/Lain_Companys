@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--ViewPager 动力监控-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--动力监控 设备列表-->
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/power_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:recyclerviewEmptyView="@layout/empty_view"
+        >
+
+    </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+
+    >
+
+    <TextView
+        android:id="@+id/oxygen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1号增氧泵"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/oxygen_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通道: RL2"
+            />
+
+        <TextView
+            android:id="@+id/device_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="机体: 已开"
+            />
+
+        <TextView
+            android:id="@+id/oxygen_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开关: 关闭"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

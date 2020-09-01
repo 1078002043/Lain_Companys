@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--视频监控主列表-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_main_temp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/video_bg"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:scaleType="center" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/video_play"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+    <!--    <TextView-->
+    <!--        android:id="@+id/video_name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="6dp"-->
+    <!--        android:text="大厅右边监控视频"-->
+    <!--        android:textColor="#ff333333"-->
+    <!--        android:textSize="12sp"-->
+    <!--        android:visibility="gone" />-->
+
+</androidx.cardview.widget.CardView>

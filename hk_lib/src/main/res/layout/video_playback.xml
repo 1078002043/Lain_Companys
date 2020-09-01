@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--视频监控 回放-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SurfaceView
+        android:id="@+id/surfaceviewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/video_playback_back"
+        android:layout_width="30dp"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/arrow_back" />
+
+    <ImageView
+        android:id="@+id/video_back_panel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="end|center"
+
+        android:background="@drawable/video_circle"
+        app:srcCompat="@drawable/history_icon"
+        />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/video_back_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:max="100"
+        android:min="0" />
+
+</FrameLayout>
+

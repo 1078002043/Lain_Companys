@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/video_back_alert"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:text="域名"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/domain_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_vertical"
+            android:hint="请输入域名"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="23dp"
+            android:text="IP"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/login_setting_ip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+
+                android:gravity="center_vertical"
+                android:hint="请输入IP"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/refresh_server_ip"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:background="@drawable/video_back_cancel"
+                android:text="刷新" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="23dp"
+            android:text="端口"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/login_setting_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="center_vertical"
+            android:hint="默认：8080"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/login_setting_right"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/split_bg"
+                android:text="确定"
+                android:textColor="@color/font_white" />
+
+            <Button
+                android:id="@+id/login_setting_cancel"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_weight="1"
+                android:background="@drawable/video_back_cancel"
+                android:text="取消" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/login_setting_spin"
+        style="@style/SpinKitView.Large.DoubleBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

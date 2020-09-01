@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--设备详情中的添加设备-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    >
+
+
+        <LinearLayout
+            android:id="@+id/add_edit_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/add_new_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/alert_bg"
+        android:text="@string/add_device_btn"
+        android:textColor="@color/font_white"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/add_edit_layout"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<!--DrawerLayout menu-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/group1">
+
+        <item
+            android:id="@+id/menu_alert_message"
+            android:title="报警信息"
+            android:contentDescription="ALERT_MESSAGE"
+            />
+
+        <item
+            android:id="@+id/menu_user_manage"
+            android:title="用户管理"
+            android:contentDescription="USER_MANAGE"
+
+            />
+
+    </group>
+
+    <group android:id="@+id/group2">
+
+        <item
+            android:id="@+id/change_user"
+            android:title="修改资料"
+            android:contentDescription="CHANGE_USER"
+            />
+
+        <item
+            android:id="@+id/menu_exit_login"
+            android:title="退出登陆"
+            android:contentDescription="EXIT_LOGIN"
+            />
+
+        <item
+            android:id="@+id/menu_about"
+            android:title="关于我们"
+            android:contentDescription="ABOUT_ME"
+            android:titleCondensed="sdfewr"
+            android:tooltipText="sder"
+            />
+    </group>
+</menu>

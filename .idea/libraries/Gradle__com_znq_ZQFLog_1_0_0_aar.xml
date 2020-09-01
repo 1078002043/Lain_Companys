@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.znq:ZQFLog:1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1be45ea9ff3b659be96635007d81996a/ZQFLog-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1be45ea9ff3b659be96635007d81996a/ZQFLog-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1be45ea9ff3b659be96635007d81996a/ZQFLog-1.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.znq/ZQFLog/1.0.0/d55e53f11fc9cdb6260cf7866146b3d6b3fbcaa4/ZQFLog-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.znq/ZQFLog/1.0.0/7d46fb0b6b0f601b8839874381def01b050625b2/ZQFLog-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

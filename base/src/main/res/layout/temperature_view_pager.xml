@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--温室度 ViewPager 中的 实时数据-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <com.ethanco.circleprogresslibrary.TextCircleProgress
+        android:id="@+id/device_real_data"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        custom:bottomHeadSize="25"
+        custom:headColor="@color/color4"
+        custom:headSize="18sp"
+        custom:maxProgress="200"
+        custom:subHeadColor="@color/color4"
+        custom:subHeadSize="25sp"
+        custom:bottomHeadColor="@color/color2"
+
+        />
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/temperature_recycler_real_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:recyclerviewEmptyView="@layout/empty_view"
+        android:layout_marginTop="10dp"
+        >
+
+    </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+</LinearLayout>

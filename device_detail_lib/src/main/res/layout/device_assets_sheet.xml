@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/device_assets_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/device_assets_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/device_assets_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="设备名称"
+        android:textSize="14sp"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"
+        android:layout_marginLeft="10dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/device_assets_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="排插数量"
+        android:textSize="14sp"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/device_assets_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/alert_bg"
+        android:text="@string/add_device_btn"
+        android:textColor="@color/font_white"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/add_edit_layout"
+        />
+
+</LinearLayout>

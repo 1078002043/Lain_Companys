@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!--温室度 中的 实时数据-->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_real_item_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="120dp"
+    android:layout_centerInParent="true"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:background="@drawable/real_no_sel_item"
+    android:padding="15dp"
+    android:text="2号温湿度"
+    android:textColor="#1EABDD"
+    />

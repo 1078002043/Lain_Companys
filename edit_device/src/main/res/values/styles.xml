@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AwesomeValidation.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="TextInputLayoutErrorStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#ffffbb33</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--时间选择器圆角-->
+        <item name="dialogCornerRadius">10dp</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+
+    </style>
+
+    <!--    全屏-->
+
+
+    <!--添加设备的 Activity，是一个弹窗的 Activity，DeviceDetail_Add引用了-->
+
+    <!--1像素Activity风格 @android:color/transparent-->
+
+    <!--设置toolbar弹出菜单的位置-->
+    <!--修改toolbar弹出剩余隐藏菜单条目按钮的样式-->
+
+</resources>

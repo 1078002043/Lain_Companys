@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">莱安智能</string>
+    <string name="user_name">请输入用户名</string>
+    <string name="user_password">请输入密码</string>
+    <string name="login_text">登 陆</string>
+    <string name="save_login_info">保存登陆信息</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_title">hell</string>
+    <string name="add_device_name">名称</string>
+    <string name="device_name">设备名称</string>
+    <string name="port_text">端口</string>
+    <string name="device_port">设备端口</string>
+    <string name="ip_text">IP</string>
+    <string name="device_ip">设备IP</string>
+    <string name="device_position_text">位置</string>
+    <string name="device_pos">设备位置</string>
+    <string name="add_device_btn">添加</string>
+    <string name="temprature">温湿度</string>
+    <string name="room_management">机房管理</string>
+    <string name="default_temperature">温度：25</string>
+    <string name="humidity">湿度：40</string>
+
+    <string name="temperature">温度</string>
+    <string name="humidity_text">湿度</string>
+    <string name="device_max">上限</string>
+    <string name="device_min">下限</string>
+    <string name="device_interval">间隔</string>
+    <string name="save_interval">保存间隔</string>
+
+    <string name="download_count">%d</string>
+
+</resources>

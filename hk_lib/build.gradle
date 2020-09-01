@@ -1,0 +1,105 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.jakewharton.butterknife'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+
+        ndk {
+            // 设置支持的SO库架构，才能使用 海康 SDK so 文件
+            abiFilters  "armeabi-v7a", "x86"
+        }
+
+        externalNativeBuild {
+            cmake {
+                cppFlags "-frtti -fexceptions"
+                abiFilters 'armeabi-v7a'
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
+    //编译之后，jniLibs就出来了
+    sourceSets {
+        main {
+            jni.srcDirs = ['src/main/jni', 'src/main/jni/']
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/jniLibs']
+            jniLibs.srcDirs = ['src/main/libs']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation project(path: ':base')
+    //时间选择器
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.1'
+    //注解
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    //加载动画
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation files('libs/AudioEngineSDK.jar')
+    implementation files('libs/HCNetSDK.jar')
+    implementation files('libs/jna.jar')
+    implementation files('libs/PlayerSDK.jar')
+
+    //主题库
+    implementation 'com.solid.skin:skinlibrary:2.0.0'
+    //UltimateRecyclerView
+    implementation 'com.marshalchen.ultimaterecyclerview:library:0.9.0'
+
+    //OkHttp3 网络请求库
+    implementation 'com.squareup.okhttp3:okhttp:4.0.1'
+
+    //GSON
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation project(path: ":ffmeger_com")
+
+    //完整版引入
+    implementation 'com.shuyu:GSYVideoPlayer:7.1.0'
+    //卡片
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    //Glide 加载图片
+//    implementation 'com.github.bumptech.glide:glide:4.9.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+}

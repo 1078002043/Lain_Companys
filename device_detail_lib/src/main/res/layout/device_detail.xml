@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设备点击后会跳转到该活动页-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+<!--    加载时的动画-->
+    <com.github.ybq.android.spinkit.SpinKitView
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorPrimary"
+        android:layout_below="@+id/detail_head"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+    <!--以一个 Fragment 的形式呈现-->
+    <FrameLayout
+        android:id="@+id/device_detail_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detail_head"
+        >
+
+    </FrameLayout>
+    <!--Toolbar-->
+    <include
+        android:id="@+id/insert_toolbar"
+        layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/detail_head"
+        layout="@layout/locating_template"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="gone"
+        android:layout_below="@id/insert_toolbar"
+        />
+
+</RelativeLayout>

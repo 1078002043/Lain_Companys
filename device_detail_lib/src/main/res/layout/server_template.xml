@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#E5E7E9 ">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="CPU使用情况"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/cpu_chart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#E5E7E9 ">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="交换区使用情况"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <com.liulishuo.magicprogresswidget.MagicProgressBar
+            android:id="@+id/area_pro"
+            android:layout_height="20dp"
+            style="@style/demo_progress_bar"
+            app:mpb_background_color="#1A494343"
+            app:mpb_fill_color="#DDA13A"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用量"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <com.liulishuo.magicprogresswidget.MagicProgressBar
+            android:id="@+id/memory_pro"
+            style="@style/demo_progress_bar"
+            android:layout_height="20dp"
+            app:mpb_background_color="#1A494343"
+            app:mpb_fill_color="#F3355A" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用量"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#E5E7E9 ">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="内存使用情况"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <com.liulishuo.magicprogresswidget.MagicProgressBar
+            android:id="@+id/area_pro2"
+            android:layout_height="20dp"
+            style="@style/demo_progress_bar"
+            app:mpb_background_color="#1A494343"
+            app:mpb_fill_color="#DDA13A"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用量"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <com.liulishuo.magicprogresswidget.MagicProgressBar
+            android:id="@+id/memory_pro2"
+            style="@style/demo_progress_bar"
+            android:layout_height="20dp"
+            app:mpb_background_color="#1A494343"
+            app:mpb_fill_color="#F3355A" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用量"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#E5E7E9 ">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="磁盘使用情况"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/disks"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+            android:id="@+id/disk_pie_charts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

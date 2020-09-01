@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--按钮按下的样式  确定-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/circle_bg" android:state_pressed="true" />
+
+    <item android:drawable="@drawable/circle_bg" android:state_selected="true" />
+
+    <item android:drawable="@drawable/blue_btn" android:state_enabled="true" />
+
+</selector>

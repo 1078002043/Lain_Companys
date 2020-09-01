@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?><!--设备管理 实时数据-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/alarm_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--  顶部  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/alert_setting_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="T"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/alert_setting_icon"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alert_setting_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="星期一"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/alert_setting_interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="报警间隔"
+                android:textColor="#ff999999"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/alert_setting_edit"
+            android:layout_width="55dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/alert_setting_bg"
+            android:text="编辑"
+            android:textColor="@color/font_white" />
+
+    </LinearLayout>
+
+    <!--  中部  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alert_setting_start_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19:00"
+                android:textColor="#ff333333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/alert_setting_end_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:00"
+                android:textColor="#ff999999"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/alert_setting_arow" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alert_setting_start_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19:00"
+                android:textColor="#ff333333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/alert_setting_end_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:00"
+                android:textColor="#ff999999"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/alert_setting_arow" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alert_setting_start_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19:00"
+                android:textColor="#ff333333"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/alert_setting_end_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:00"
+                android:textColor="#ff999999"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="#E5E5E5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp">
+
+        <CheckBox
+            android:id="@+id/alert_setting_mode1"
+            style="@android:style/Widget.CompoundButton.RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorPrimary"
+            android:gravity="center"
+            android:text="语音" />
+
+        <CheckBox
+            android:id="@+id/alert_setting_mode2"
+            style="@android:style/Widget.CompoundButton.RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:buttonTint="@color/colorPrimary"
+            android:gravity="center"
+            android:text="短信" />
+
+        <CheckBox
+            android:id="@+id/alert_setting_mode3"
+            style="@android:style/Widget.CompoundButton.RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:buttonTint="@color/colorPrimary"
+            android:gravity="center"
+            android:text="声光" />
+
+        <CheckBox
+            android:id="@+id/alert_setting_mode4"
+            style="@android:style/Widget.CompoundButton.RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:buttonTint="@color/colorPrimary"
+            android:gravity="center"
+            android:text="邮箱" />
+
+    </LinearLayout>
+
+</LinearLayout>

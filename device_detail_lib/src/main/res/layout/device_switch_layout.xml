@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--新风机 ViewPager 实时数据-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/device_switch_recycler"
+        android:layout_width="match_parent"
+        app:recyclerviewEmptyView="@layout/empty_view"
+        android:layout_height="match_parent">
+
+    </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+
+</LinearLayout>

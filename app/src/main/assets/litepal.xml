@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--LitePal SQLite 数据库映射表-->
+<litepal>
+    <!--数据库名-->
+    <dbname value = "lain_db2"/>
+    <!--数据库版本，添加表或对数据库配置修改时，就必须改变版本号才会生效-->
+    <version value = "4"/>
+
+    <list>
+        <!--登录用户信息表-->
+        <mapping class="cn.com.lain.bean.UserInfo"/>
+        <mapping class="util.APPConfig"/>
+        <mapping class="util.DeviceListMap"/>
+        <mapping class="bean.ConfigBean"/>
+    </list>
+
+</litepal>

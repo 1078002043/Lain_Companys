@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?><!--设备详情中的添加设备-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/new_device_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:hint="设备名称"
+                android:textSize="14sp"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/electricity_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:hint="设备地址"
+                android:inputType="number"
+                android:textSize="14sp"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/device_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:hint="设备通道"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxAvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="A相电压上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinAvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="A相电压下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxBvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="B相电压上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinBvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="B相电压下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxCvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="C相电压上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinCvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="C相电压下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxAcur"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="A相电流上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinAcur"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="A相电流下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxBcur"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="B相电流上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinBcur"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="B相电流下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxCcur"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="C相电流上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinCcur"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="C相电流下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxABvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="AB相电压上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinABvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="AB相电压下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxBCvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="BC相电压上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinBCvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="BC相电压下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxCAvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="CA相电压上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinCAvol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="CA相电压下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxApap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="A相有功功率上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinApap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="A相有功功率下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxBpap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="B相有功功率上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinBpap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="B相有功功率下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxCpap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="C相有功功率上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinCpap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="C相有功功率下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxAprp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="A相无功功率下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinAprp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="A相无功功率下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxBprp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="B相无功功率上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinBprp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="B相无功功率下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxCprp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="C相无功功率上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinCprp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="C相无功功率下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxAppf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="A相功率因素上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinAppf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="A相功率因素下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxBppf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="B相功率因素上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinBppf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="B相功率因素下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxCppf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="C相功率因素上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinCppf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="C相功率因素下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxTpap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="总有功功率上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinTpap"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="总有功功率下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxTprp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="总无功功率上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinTprp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="总无功功率下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMaxTppf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:hint="总功率因素上限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/pemMinTppf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:hint="总功率因素下限"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/elec_intervalTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:hint="报警信息间隔"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="?colorAccent"
+                    app:met_singleLineEllipsis="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!--输入添加设备的信息-->
+    <Button
+        android:id="@+id/add_new_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/alert_bg"
+        android:text="修改"
+        android:textColor="@color/font_white" />
+
+
+</LinearLayout>

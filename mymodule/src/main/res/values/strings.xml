@@ -1,0 +1,5 @@
+<resources>
+    <string name="updatecontent" translatable="false">1.莱安智能 V2版震撼来袭\n2.优化代码，更小的安装包\n3.后台报警功能，实时监控设备状态</string>
+    <string name="custom_content_text" translatable="false">%d%%/100%%</string>
+    <string name="update_title" translatable="false">莱安智能 V2版震撼来袭</string>
+</resources>

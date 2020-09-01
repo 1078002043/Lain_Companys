@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:id="@+id/popup_change"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#5097FF"
+        >
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="修改" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/popup_delete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#282828"
+        >
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="删除" />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

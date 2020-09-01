@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Toolbar-->
+        <include
+            android:id="@+id/insert_toolbar"
+            layout="@layout/toolbar" />
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:id="@+id/container_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/a_device_name_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="设备名称" />
+
+                    <EditText
+                        android:id="@+id/a_device_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/a_device_interval_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="更新时间" />
+
+                    <EditText
+                        android:id="@+id/a_device_interval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:inputType="number"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/a_device_alert_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="报警值" />
+
+                    <EditText
+                        android:id="@+id/a_device_alert"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:inputType="number"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/a_device_line_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="线长度" />
+
+                    <EditText
+                        android:id="@+id/a_device_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:inputType="number"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/temp_range_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="温度区间" />
+
+                    <EditText
+                        android:id="@+id/temp_range_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/temp_range_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        温度的错误提示        -->
+                <TextView
+                    android:id="@+id/temp_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ammonia_range_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="氨气区间" />
+
+                    <EditText
+                        android:id="@+id/ammonia_range_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/ammonia_range_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <!--        氨气的错误提示        -->
+                <TextView
+                    android:id="@+id/ammonia_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/nitrogen_range_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="氮气区间" />
+
+                    <EditText
+                        android:id="@+id/nitrogen_range_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/nitrogen_range_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+
+                <!--        氮气的错误提示        -->
+                <TextView
+                    android:id="@+id/nitrogen_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/concentration_range_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="浓度区间" />
+
+                    <EditText
+                        android:id="@+id/concentration_range_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/concentration_range_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        浓度的错误提示        -->
+                <TextView
+                    android:id="@+id/concentration_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/hum_range_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="湿度区间" />
+
+                    <EditText
+                        android:id="@+id/hum_range_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/hum_range_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        湿度的错误提示        -->
+                <TextView
+                    android:id="@+id/hum_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/noise_range_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="噪音区间" />
+
+                    <EditText
+                        android:id="@+id/noise_range_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/noise_range_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        噪音的错误提示        -->
+                <TextView
+                    android:id="@+id/noise_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/range_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="范围区间" />
+
+                    <EditText
+                        android:id="@+id/range_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/range_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        范围区间的错误提示        -->
+                <TextView
+                    android:id="@+id/range_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/electric_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="电流区间" />
+
+                    <EditText
+                        android:id="@+id/electric_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/electric_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        电流区间的错误提示        -->
+                <TextView
+                    android:id="@+id/electric_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/phase_a_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text=" A相电流区间" />
+
+                    <EditText
+                        android:id="@+id/phase_a_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/phase_a_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        A相电流区间的错误提示        -->
+                <TextView
+                    android:id="@+id/phase_a_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/voltage_a_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text=" A相电压区间" />
+
+                    <EditText
+                        android:id="@+id/voltage_a_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/voltage_a_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        A相电压区间的错误提示        -->
+                <TextView
+                    android:id="@+id/voltage_a_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/phase_b_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text=" B相电流区间" />
+
+                    <EditText
+                        android:id="@+id/phase_b_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/phase_b_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        B相电流区间的错误提示        -->
+                <TextView
+                    android:id="@+id/phase_b_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/voltage_b_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text=" B相电压区间" />
+
+                    <EditText
+                        android:id="@+id/voltage_b_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/voltage_b_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        B相电压区间的错误提示        -->
+                <TextView
+                    android:id="@+id/voltage_b_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/phase_c_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text=" C相电流区间" />
+
+                    <EditText
+                        android:id="@+id/phase_c_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/phase_c_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        C相电流区间的错误提示        -->
+                <TextView
+                    android:id="@+id/phase_c_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/voltage_c_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text=" C相电压区间" />
+
+                    <EditText
+                        android:id="@+id/voltage_c_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/voltage_c_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        C相电压区间的错误提示        -->
+                <TextView
+                    android:id="@+id/voltage_c_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/oxygen_range_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="含氧量区间" />
+
+                    <EditText
+                        android:id="@+id/oxygen_range_min"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMin"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                    <EditText
+                        android:id="@+id/oxygen_range_max"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/a_rangeMax"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1" />
+
+                </LinearLayout>
+                <!--        含氧量区间的错误提示        -->
+                <TextView
+                    android:id="@+id/oxygen_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#E65E5E"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/deviceAddressPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="设备地址" />
+
+                    <Spinner
+                        android:id="@+id/deviceAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/activity_vertical_margin" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/deviceGalleryPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="设备通道" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/activity_vertical_margin" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/classify_spinner_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="所属分组" />
+
+                    <Spinner
+                        android:id="@+id/classify_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/activity_vertical_margin" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ip_spinner_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="IP 地址" />
+
+                    <Spinner
+                        android:id="@+id/ip_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/activity_vertical_margin" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/functionCodePanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:text="功能码" />
+
+                    <Spinner
+                        android:id="@+id/functionCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/activity_vertical_margin" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/btn_clr"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/blue_btn"
+            android:text="@string/btn_clr"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/blue_btn"
+            android:text="@string/btn_done"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

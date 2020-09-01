@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--设备报警底部面板中的设备列表模板-->
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_panel_device"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@drawable/alert_btn"
+    android:text="1号定位漏水"
+    android:textColor="@color/font_color"
+    android:textSize="11dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="6.5dp"
+    android:layout_marginBottom="6.5dp"
+
+    >
+
+
+
+</Button>

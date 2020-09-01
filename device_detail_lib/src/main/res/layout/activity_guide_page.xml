@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!--欢迎页面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6090FC"
+    >
+
+    <!--    欢迎页，只有一页-->
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/cb_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+    <!-- 倒计时文本 -->
+    <TextView
+        android:id="@+id/id_countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/countdown_margin"
+        android:layout_marginEnd="@dimen/countdown_margin"
+        android:layout_marginRight="@dimen/countdown_margin"
+        android:background="@drawable/welcom_time"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="@dimen/countdown_text_size"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

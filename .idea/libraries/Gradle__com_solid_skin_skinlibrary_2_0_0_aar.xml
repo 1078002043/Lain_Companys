@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.solid.skin:skinlibrary:2.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eefd237b6c31670e88a770137eb42da7/jetified-skinlibrary-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eefd237b6c31670e88a770137eb42da7/jetified-skinlibrary-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eefd237b6c31670e88a770137eb42da7/jetified-skinlibrary-2.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.solid.skin/skinlibrary/2.0.0/a3bc0fab9f67c32d8f3dc6b93031c347446f9f9f/skinlibrary-2.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.solid.skin/skinlibrary/2.0.0/d799bc6545ef6b87ddac46793c4017076afd4853/skinlibrary-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

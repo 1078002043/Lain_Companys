@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">莱安智能</string>
+    <string name="user_name">请输入用户名</string>
+    <string name="user_password">请输入密码</string>
+    <string name="login_text">登 陆</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="device_name">设备名称</string>
+    <string name="add_device_btn">添加</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--精密空调 ViewPager 中 实时数据-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/precision_realtime_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        app:recyclerviewEmptyView="@layout/empty_view"
+        >
+
+    </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+
+</LinearLayout>

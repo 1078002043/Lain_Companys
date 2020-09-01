@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="Overdraw">
+
+
+    <com.venmo.view.TooltipView
+        android:id="@+id/tooltip_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center_horizontal"
+        android:text="Don't get it?"
+        app:tooltipColor="#A62D352D"
+        android:textColor="#fff"
+         />
+
+</RelativeLayout>

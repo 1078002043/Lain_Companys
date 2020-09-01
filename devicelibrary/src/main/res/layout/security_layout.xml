@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--机房监控中的设备 列表模板-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/environmental_card3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <FrameLayout
+        android:layout_width="45dp"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/device_name"
+
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/monitor_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/monitor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="温湿度"
+        android:textColor="#ff808080"
+        android:textSize="11sp" />
+
+
+    <!--<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/temperature"
+        >
+
+        <LinearLayout
+            android:id="@+id/left_part"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            &lt;!&ndash;设备的图标&ndash;&gt;
+            <ImageView
+                android:id="@+id/monitor_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/device_name"
+                app:srcCompat="@drawable/pic24"
+                android:visibility="gone"
+                />
+            &lt;!&ndash;设备名称&ndash;&gt;
+            <TextView
+                android:id="@+id/monitor_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/device_name"
+                android:textColor="@color/font_white"
+                android:textSize="13sp"
+                android:layout_marginEnd="28dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>-->
+</LinearLayout>
